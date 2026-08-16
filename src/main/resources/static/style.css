@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 10px 0;
+    color: #8b7cff;
+}
+
+header p {
+    color: #aeb6cc;
+}
+
+main {
+    background: #151d35;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.description {
+    text-align: center;
+    color: #aeb6cc;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #8b7cff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7565ee;
+}
+
+.result {
+    margin-top: 35px;
+    padding: 25px;
+    background: #0f162b;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#riskScore {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#checks {
+    margin-top: 20px;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #777f96;
+}
