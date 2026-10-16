@@ -37,6 +37,11 @@ if (grepl("//.*\\.", url) && !grepl("//[^/]*\\.", url)) {
   warnings <- c(warnings, "Multiple subdomains")
 }
 
+if (grepl("https?://\\d{1,3}(\\.\\d{1,3}){3}", url)) {
+  score <- score + 35
+  warnings <- c(warnings, "IP address used instead of a domain name")
+}
+
 # Determine risk level
 risk_level <- ifelse(score >= 50, "High Risk", 
                      ifelse(score >= 30, "Medium Risk", "Low Risk"))
